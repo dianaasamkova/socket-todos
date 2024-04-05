@@ -41,6 +41,17 @@ export const TodosProvider: React.FC<TodosProviderProps> = ({children}) => {
         getTodos();
     }, []);
 
+    /**
+     *  Context is chosen for simplicity and ease of use. Since this is a small project, the Redux or MobX may not be necessary.
+     *  Context API provides a straightforward way to manage state without the need for additional libraries, making it a suitable choice for this project.
+     *
+     *  Redux is a popular choice, especially when dealing with large-scale applications with deeply nested component trees.
+     *  By creating a Redux channel, real-time data updates from the server can be dispatched to the store.
+     *
+     * MobX is another viable option known for its simplicity and flexibility.
+     * To integrate MobX with WebSocket/socket.io, we can utilize MobX reactions to observe changes in socket data and update the MobX state accordingly.
+    */
+
     return (
         <TodosContext.Provider value={{todos, setTodos}}>
             {children}
