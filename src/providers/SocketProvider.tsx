@@ -1,12 +1,12 @@
-import React, {useEffect} from 'react';
-import io from 'socket.io-client';
+import React, {useEffect} from "react";
+import io from "socket.io-client";
 import {ITodo} from "../pages/HomePage/HomePage";
 import {useTodos} from "../context/ToDosContext";
 
-const SOCKET_URL = 'http://localhost:8000';
+const SOCKET_URL = "http://localhost:8000";
 
 enum SocketEvents {
-    UpdateProgress = 'update-todo-progress'
+    UpdateProgress = "update-todo-progress"
 }
 
 interface SocketProviderProps {

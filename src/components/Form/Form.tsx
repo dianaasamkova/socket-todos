@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {TextField, Button} from "@mui/material";
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 import {ITodo} from "../../context/ToDosContext";
 
 type NewTodo = Omit<ITodo, "_id">;
@@ -45,7 +45,7 @@ const CreateForm: React.FC<TodoFormProps> = ({createTodo}) => {
 
 export default CreateForm;
 
-const FormWrapper = styled('form')(({ theme }) => ({
+const FormWrapper = styled("form")(({ theme }) => ({
     display: "flex",
     flexDirection: "column",
     gap: theme.spacing(2),

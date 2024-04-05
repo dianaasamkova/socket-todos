@@ -1,6 +1,6 @@
-import Typography from '@mui/material/Typography';
-import React, {useMemo} from 'react';
-import {useParams, Link} from 'react-router-dom';
+import Typography from "@mui/material/Typography";
+import React, {useMemo} from "react";
+import {useParams, Link} from "react-router-dom";
 import {useTodos} from "../../context/ToDosContext";
 
 const TodoPage: React.FC = () => {

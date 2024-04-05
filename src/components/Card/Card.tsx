@@ -2,9 +2,9 @@ import React, {useCallback, useEffect, useState} from "react";
 import {Card, CardContent, Typography, IconButton, Slider, TextField} from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
-import {styled} from '@mui/material/styles';
+import {styled} from "@mui/material/styles";
 import {ITodo} from "../../context/ToDosContext";
-import {Link} from 'react-router-dom';
+import {Link} from "react-router-dom";
 import debounce from "lodash.debounce";
 
 interface CardProps {
@@ -38,7 +38,7 @@ const CardComponent: React.FC<CardProps> = ({deleteTodo, editTodo, item}) => {
 
 
     function handleChange(event: Event, newValue: number | number[]) {
-        if (typeof newValue === 'number') {
+        if (typeof newValue === "number") {
             setSlider(newValue);
             debounceSlideUpdating(newValue);
         }
@@ -69,7 +69,7 @@ const CardComponent: React.FC<CardProps> = ({deleteTodo, editTodo, item}) => {
                             />
                         </form>
                     ) : (
-                        <Link to={`/todo/${item._id}`} style={{textDecoration: 'none', color: 'inherit'}}>
+                        <Link to={`/todo/${item._id}`} style={{textDecoration: "none", color: "inherit"}}>
                             <div>
                                 <Typography variant="h6" component="div" gutterBottom>
                                     {item.name}

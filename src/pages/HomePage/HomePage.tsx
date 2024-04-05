@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import axios from "axios";
 import CardComponent from "../../components/Card/Card";
 import CreateForm from "../../components/Form/Form";
-import { Box } from '@mui/material';
-import { useTodos } from '../../context/ToDosContext';
+import { Box } from "@mui/material";
+import { useTodos } from "../../context/ToDosContext";
 
 export interface ITodo {
     _id: string;
@@ -11,7 +11,7 @@ export interface ITodo {
     description: string;
     progress: number;
 }
-const API_URL = 'http://localhost:8000/api';
+const API_URL = "http://localhost:8000/api";
 
 function HomePage() {
     const { todos, setTodos } = useTodos();

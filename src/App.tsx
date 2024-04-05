@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import HomePage from './pages/HomePage/HomePage';
+import HomePage from "./pages/HomePage/HomePage";
 import {TodosProvider} from "./context/ToDosContext";
 import TodoPage from "./pages/ToDoPage/ToDoPage";
-import { SocketProvider } from './providers/SocketProvider';
+import { SocketProvider } from "./providers/SocketProvider";
 
 
 const router = createBrowserRouter([
